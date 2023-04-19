@@ -5,6 +5,8 @@
     player '呃啊，我是谁，我这是在哪里？'
 
     '缓缓睁开双眼，却发现自己来到了一片奇诡的“荒野”'
+    hide bg black
+    scene bg prologue1 with dissolve
     '说是荒野，但地面四分五裂，重力仿佛不复存在'
     extend '——楼宇、飞船、各类家具甚至动物都糅杂在一起，难舍难分。'
 
