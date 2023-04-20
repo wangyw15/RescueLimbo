@@ -8,8 +8,7 @@
     hide bg black
     scene bg prologue1 with dissolve
     '却发现自己来到了一片奇诡的“荒野”，正躺在废墟之中'
-    extend '\n说是荒野，但地面四分五裂，重力也仿佛不复存在'
-    extend '\n楼宇、飞船、各类家具甚至动物都糅杂在一起，难舍难分。'
+    extend '\n地面四分五裂，楼宇、家具、各类杂物都混合在一起，难舍难分。'
     '???' '[player.name]，欢迎来到由往生实践设施创建的实验世界-8号，我是这个世界的AI-[hitomi.name]'
     '一个缥缈却明丽的声音传来'
     player '什么AI？什么设施？我记得我刚才还在教室里啊，还在跟ChatGPT畅聊呢。'
