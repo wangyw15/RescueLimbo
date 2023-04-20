@@ -1,6 +1,6 @@
 define player = Character('我')
 define hitomi = Character('Hitomi', image='hitomi')
-image bg black = Color('#00000000')
+image bg black = Color('#000000ff')
 
 transform chr_resize:
     zoom 0.4

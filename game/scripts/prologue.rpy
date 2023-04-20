@@ -4,7 +4,7 @@
 
     player '啊啊，头好疼...'
     '感觉自己好像躺在地上'
-    extend '为了确认周围的情况，我缓缓地睁开了双眼'
+    extend '\n为了确认周围的情况，我缓缓地睁开了双眼'
     hide bg black
     scene bg prologue1 with dissolve
     '却发现自己来到了一片奇诡的“荒野”，正躺在废墟之中'
