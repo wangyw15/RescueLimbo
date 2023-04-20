@@ -1,4 +1,4 @@
-define player = Character('玩家名')
+define player = Character('我')
 define hitomi = Character('Hitomi', image='hitomi')
 image bg black = Color('#00000000')
 
