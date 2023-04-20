@@ -2,12 +2,12 @@
     show bg black
     # show hitomi normal at right, chr_resize with dissolve
 
-    player '啊啊，我是谁，我这是在哪里？'
-
-    '我缓缓地睁开了双眼'
+    player '啊啊，头好疼...'
+    '感觉自己好像躺在地上'
+    extend '为了确认周围的情况，我缓缓地睁开了双眼'
     hide bg black
     scene bg prologue1 with dissolve
-    '却发现自己来到了一片奇诡的“荒野”'
+    '却发现自己来到了一片奇诡的“荒野”，正躺在废墟之中'
     extend '\n说是荒野，但地面四分五裂，重力也仿佛不复存在'
     extend '\n楼宇、飞船、各类家具甚至动物都糅杂在一起，难舍难分。'
     '???' '[player.name]，欢迎来到由往生实践设施创建的实验世界-8号，我是这个世界的AI-[hitomi.name]'
