@@ -1,6 +1,7 @@
 label start:
     # 输入玩家名
     $ player_name = renpy.input('请输入你的玩家名：')
+
     # 序章
     show overlay dark
     show text '{color=#FFFFFF}{size=+50}序章{/size}{/color}'
@@ -11,6 +12,7 @@ label start:
     with dissolve
     call prologue
 
+    # 正文
     show overlay dark
     show text '{color=#FFFFFF}{size=+50}向聚类进发{/size}{/color}'
     window hide
@@ -21,16 +23,54 @@ label start:
     window show
     with dissolve
 
+    # 间章1
     player '聚类听着就像把一堆数据分成几类，这里面有什么奥妙呢？'
-    hitomi '没错，聚类是针对给定的样本，依据它们特征的相似度或距离，将其归并到若干个“类”或“簇”的数据分析问题，其结果满足，类内部相似，类之间不相似。注意它和分类有一定区别，聚类的对象仅仅是一堆数据，这些数据本身是不带标签的，所以聚类可以算作一种无监督学习。'
+    hitomi happy '没错，聚类是针对给定的样本，依据它们特征的相似度或距离，将其归并到若干个“类”或“簇”的数据分析问题。'
+    hitomi '其结果满足类内部相似，但类之间不相似。'
+    hitomi angry '注意它和分类有一定区别，聚类的对象仅仅是一堆数据，这些数据本身是不带标签的，所以聚类可以算作一种无监督学习。'
     hitomi '就好像我们现在所面临的情况，各种组成物体的数据开始混杂在一起，各种物体的界限不再分明，我们要做的就是将这些逐渐混乱的数据重新分成一个个簇，让物体不再混乱。'
     player '嗯~听你讲的好像也不难的呀，那我该怎么用聚类呢？总不能我把这些数据一个个用袋子封装好吧？'
-    hitomi '这就要涉及到我们的算法了，为了实现聚类的目的，我们可以使用三种算法：模型聚类算法K-means、密度聚类算法DBSCAN和层次聚类算法Agnes，它们各有各的特点，虽然都能完成聚类的目的，但是聚类出的结果其实各自有所不同。当然，实现聚类可以用的算法远远不止这三个，只不过这三个算法已经可以满足我们的需求，并且也足够你这个大学生领悟了（笑）。'
-    player '（怎么感觉在骂我？？？）好吧，那我速速学习一下吧，来！'
+    hitomi happy '这就要涉及到我们的算法了，为了实现聚类的目的，我们可以使用三种算法：'
+    hitomi '模型聚类算法K-means'
+    extend '\n密度聚类算法DBSCAN'
+    extend '\n层次聚类算法Agnes'
+    hitomi normal '它们各有各的特点，虽然都能完成聚类的目的，但是聚类出的结果其实各自有所不同'
+    hitomi happy '当然，实现聚类可以用的算法远远不止这三个，只不过这三个算法已经可以满足我们的需求，并且也足够你这个大学生领悟了'
+    player '好吧，那我速速学习一下吧，来！'
+    '（怎么感觉在骂我？？？）'
 
-    # 主要剧情 - 三个聚类
+    # 三个聚类
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}K-Means{/size}{/color}'
+    window hide
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    window show
+    with dissolve
     call kmeans
+
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}DBSCAN{/size}{/color}'
+    window hide
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    window show
+    with dissolve
     call dbscan
+
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}Agnes{/size}{/color}'
+    window hide
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    window show
+    with dissolve
     call agnes
 
     player '我说停停，我是差不多知道它们的工作原理了啦，但是它们在各种情况下孰优孰劣我还没实践过啊！至少，把它们的优缺点也和我一叙呗。'
