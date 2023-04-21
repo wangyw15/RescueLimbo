@@ -2,6 +2,8 @@ define player_name = '黎明'
 define player = Character('player_name', dynamic=True)
 define hitomi = Character('Hitomi', image='hitomi_catear')
 image bg black = Color('#000000ff')
+image overlay black = Color('#000000ff')
+image overlay dark = Color('#000000bb')
 
 transform chr_display:
     yoffset 200

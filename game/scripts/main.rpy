@@ -2,7 +2,24 @@ label start:
     # 输入玩家名
     $ player_name = renpy.input('请输入你的玩家名：')
     # 序章
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}序章{/size}{/color}'
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    with dissolve
     call prologue
+
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}向聚类进发{/size}{/color}'
+    window hide
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    window show
+    with dissolve
 
     player '聚类听着就像把一堆数据分成几类，这里面有什么奥妙呢？'
     hitomi '没错，聚类是针对给定的样本，依据它们特征的相似度或距离，将其归并到若干个“类”或“簇”的数据分析问题，其结果满足，类内部相似，类之间不相似。注意它和分类有一定区别，聚类的对象仅仅是一堆数据，这些数据本身是不带标签的，所以聚类可以算作一种无监督学习。'

@@ -8,7 +8,7 @@
     scene bg prologue1 with dissolve
     '却发现自己来到了一片奇诡的“荒野”，正躺在废墟之中'
     '地面四分五裂，楼宇、家具、各类杂物都混合在一起，难舍难分'
-    '???' '[player.name]，欢迎来到由往生实践设施创建的实验世界-8号，我是这个世界的AI-[hitomi.name]'
+    '???' '[player_name]，欢迎来到由往生实践设施创建的实验世界-8号，我是这个世界的AI-[hitomi.name]'
     '一个缥缈却明丽的声音传来'
     show hitomi_catear normal at right, chr_display with dissolve
     '循声而去，是一个猫耳少女在向我说话'
