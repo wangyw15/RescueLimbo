@@ -1,9 +1,8 @@
 define player = Character('我')
-define hitomi = Character('Hitomi', image='hitomi')
+define hitomi = Character('Hitomi', image='hitomi_catear')
 image bg black = Color('#000000ff')
 
-transform chr_resize:
-    zoom 0.4
+transform chr_display:
     yoffset 200
 
 init python:
