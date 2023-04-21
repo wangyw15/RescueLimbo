@@ -1,4 +1,6 @@
 label start:
+    # 自动全屏
+    $ fullscreen()
     # 输入玩家名
     $ player_name = renpy.input('请输入你的玩家名：')
 

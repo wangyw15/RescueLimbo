@@ -9,7 +9,14 @@ transform chr_display:
     yoffset 200
 
 init python:
-    import requests
-    def set_select(key: str) -> None:
+    def set_select(key: str):
+        if renpy.emscripten():
+            return
+        if not requests:
+            import requests
         api_url = 'localhost'
         requests.get(f'https://{api_url}/rescuelimbo/increase?key={key}')
+
+    def fullscreen():
+        if renpy.emscripten:
+            renpy.emscripten.run_script('document.body.requestFullscreen()')
