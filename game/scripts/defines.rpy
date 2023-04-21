@@ -1,4 +1,5 @@
-define player = Character('我')
+define player_name = '黎明'
+define player = Character('player_name', dynamic=True)
 define hitomi = Character('Hitomi', image='hitomi_catear')
 image bg black = Color('#000000ff')
 
