@@ -60,4 +60,19 @@ public class GameProgressStorage : ControllerBase
         }
         return 0;
     }
+
+    [HttpGet("get_all")]
+    public Dictionary<string, int> GetAllCount(string key)
+    {
+        Dictionary<string, int>? data;
+        if (System.IO.File.Exists("data.json"))
+        {
+            data = JsonSerializer.Deserialize<Dictionary<string, int>>(System.IO.File.ReadAllText("data.json"));
+            if (data != null)
+            {
+                return data;
+            }
+        }
+        return new Dictionary<string, int>();
+    }
 }
