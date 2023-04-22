@@ -12,11 +12,12 @@ transform chr_display:
 init python:
     def set_select(key: str):
         if renpy.emscripten():
-            return
-        if not requests:
-            import requests
-        api_url = 'localhost'
-        requests.get(f'https://{api_url}/rescuelimbo/increase?key={key}')
+            renpy.emscripten.run_script(f"fetch('https://{api_url}/rescuelimbo/increase?key={key}')")
+        else:
+            if not requests:
+                import requests
+            api_url = 'localhost'
+            requests.get(f'https://{api_url}/rescuelimbo/increase?key={key}')
 
     def fullscreen():
         if renpy.emscripten:
