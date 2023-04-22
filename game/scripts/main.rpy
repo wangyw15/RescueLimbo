@@ -66,7 +66,7 @@ label start:
     call dbscan
 
     show overlay dark
-    show text '{color=#FFFFFF}{size=+50}Agnes{/size}{/color}'
+    show text '{color=#FFFFFF}{size=+50}层次聚类{/size}{/color}'
     window hide
     with dissolve
     pause 1.0
@@ -76,21 +76,20 @@ label start:
     with dissolve
     call agnes
 
-    player '我说停停，我是差不多知道它们的工作原理了啦，'
+    hitomi @happy '呼~终于讲完这些聚类啦~赶紧开始吧！！'
+    player '停停停，我是差不多知道它们的工作原理了啦，'
     player '但是它们在各种情况下孰优孰劣我还没实践过啊！至少，把它们的优缺点也和我一叙呗。'
-
-    hitomi @sneer '呃呃，高级研究员在大学的时候这么差劲啊。'
-    hitomi @angry '好，你听着吧：'
-    hitomi '对于Kmeans来说，如果有一个村民他住在山沟沟里，牧师也要为他一个人搬到山沟沟里。'
+    hitomi sneer '呵呵，高级研究员在大学的时候原来这么{cps=*0.1}{b}差劲{/b}啊{/cps}。'
+    hitomi  '好，你听着吧：'
+    hitomi angry '对于Kmeans来说，如果有一个村民他住在山沟沟里，牧师也要为他一个人搬到山沟沟里。'
     hitomi happy '所以Kmeans算法不适合太离散的分类、样本类别不平衡的分类、非凸形状的分类。'
-    hitomi '而DBSCAN因为可以不管离群的点，它的抗噪音性自然强了太多了，而且它可以聚出很有形状的类来，不像Kmeans，总是只给出一片片的聚类结果。'
+    hitomi '而DBSCAN因为可以不管离群的点，它的抗噪音性自然强了很多。'
+    hitomi '而且它可以聚出很有形状的类来，不像Kmeans，总是只给出一片片的聚类结果。'
     hitomi @angry '不过DBSCAN也有限制的，如果样本集的密度不均匀、聚类间距差相差很大时，聚类质量较差，这时用DBSCAN聚类一般不适合。'
     hitomi normal '最后是层次聚类Agnes，它的优点很明显：'
     hitomi '前两种算法都需要给出很多参数，但我Agnes啥都不用给，也能聚得很有形状，又可以发现簇之间的层次关系，是很省事的方法。'
-    hitomi shy '不过呢，你省事了，我就苦了，这从头到尾的，得算多少个距离啊，更别提这簇与簇之间的距离，算的我都烧了！'
-
-    player '你说得对，呃，我还是想要一些例子，要不你给我几张图，我来看看用三种聚类算法分别聚类以后它们的实际效果？'
-
-    hitomi '好吧，你操作就是了，快点领悟吧！'
+    hitomi @shy '不过呢，你省事了，我就苦了，这从头到尾的，得算多少个距离啊，更别提这簇与簇之间的距离，算的我都烧了！'
+    player '{cps=*0.1}嗯...我{/cps}还是想要一些例子，要不你给我几张图，我来看看用三种聚类算法分别聚类以后它们的实际效果？'
+    hitomi angry '好吧，你操作就是了，快点领悟吧！'
 
     return
