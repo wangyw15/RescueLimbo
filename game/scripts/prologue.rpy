@@ -10,7 +10,7 @@
     '地面四分五裂，楼宇、家具、各类杂物都混合在一起，难舍难分'
     '???' '[player_name]，欢迎来到由往生实践设施创建的实验世界-8号，我是这个世界的AI-[hitomi.name]'
     '一个缥缈却明丽的声音传来'
-    show hitomi_catear normal at right, chr_display with dissolve
+    show hitomi normal at right, chr_display with dissolve
     '循声而去，是一个猫耳少女在向我说话'
     '嗯，是我喜欢的类型'
     '但是现在不是想这种事的时候啊！'

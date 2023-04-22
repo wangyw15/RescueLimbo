@@ -1,12 +1,13 @@
 define player_name = '黎明'
 define player = Character('player_name', dynamic=True)
-define hitomi = Character('Hitomi', image='hitomi_catear')
+define hitomi = Character('Hitomi', image='hitomi')
 image bg black = Color('#000000ff')
 image overlay black = Color('#000000ff')
 image overlay dark = Color('#000000bb')
 
 transform chr_display:
-    yoffset 200
+    offset (100, 1150)
+    zoom 0.85
 
 init python:
     def set_select(key: str):
