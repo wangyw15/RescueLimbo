@@ -43,6 +43,7 @@ label start:
     player '好，那我速速学习一下吧，来吧！'
 
     # 三个聚类
+    show bg classroom
     show overlay dark
     show text '{color=#FFFFFF}{size=+50}K-Means{/size}{/color}'
     window hide
@@ -51,8 +52,6 @@ label start:
     hide text
     hide overlay
     window show
-    scene bg classroom
-    show hitomi normal at right, chr_display
     with dissolve
     call kmeans
 
@@ -78,6 +77,8 @@ label start:
     with dissolve
     call agnes
 
+    show bg prologue1 with dissolve
+    show hitomi happy at right, chr_display with dissolve
     hitomi @happy '呼~终于讲完这些聚类啦~赶紧开始吧！！'
     player '停停停，我是差不多知道它们的工作原理了啦，'
     player '但是它们在各种情况下孰优孰劣我还没实践过啊！至少，把它们的优缺点也和我一叙呗。'
