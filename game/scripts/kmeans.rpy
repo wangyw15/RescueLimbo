@@ -28,4 +28,5 @@ label kmeans:
     hitomi 'Kmeans的过程也就结束了。'
     player '噢噢噢噢！amen！这样就可以把距离近的数据聚成一类了！！看来我只要设置牧师数量（簇的数量）和迭代次数就可以完成聚类了！'
     hitomi @angry '顺带一提，实际上这就是Lloyd算法，通过不断迭代得到某一局部最优解。'
+    hide kmeans
     return
