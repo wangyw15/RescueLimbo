@@ -51,6 +51,8 @@ label start:
     hide text
     hide overlay
     window show
+    scene bg classroom
+    show hitomi normal at right, chr_display
     with dissolve
     call kmeans
 
