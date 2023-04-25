@@ -5,7 +5,7 @@
 - [ ] 剧本
   - [x] 序章
   - [x] 聚类介绍
-  - [ ] ...
+  - [ ] 结尾
 - [x] 人物立绘
   - 购买于[DLSite 立ち絵素材01](https://www.dlsite.com/home/work/=/product_id/RJ401991.html)
 - [x] 背景图
