@@ -106,4 +106,12 @@ label start:
     with dissolve
     call quiz
 
+    player '啊，初学聚类，感觉还有很多事情要学！'
+    hitomi '没错，刚才的聚类只是很简单的例子，为了修复我们的世界，必然要用到更多聚类方法和评判标准，不过，对于一个大二学生来说，这些知识足够你消化一阵子了，所幸这个世界里的时间比外面流速更慢，以后的知识，就等以后在再来探索吧！'
+
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}我的旅程才刚刚开始...{/size}{/color}'
+    window hide
+    with dissolve
+    pause
     return
