@@ -14,14 +14,12 @@ transform pic_display:
 
 init python:
     def set_select(key: str):
-        api_url = 'localhost'
-        if renpy.emscripten():
-            renpy.emscripten.run_script(f"fetch('https://{api_url}/rescuelimbo/increase?key={key}')")
+        api_url = 'http://localhost:5239'
+        if renpy.emscripten:
+            renpy.emscripten.run_script(f"fetch('{api_url}/rescuelimbo/increase?key={key}')")
         else:
-            if not requests:
-                import requests
-            api_url = 'localhost'
-            requests.get(f'https://{api_url}/rescuelimbo/increase?key={key}')
+            import requests
+            requests.get(f'{api_url}/rescuelimbo/increase?key={key}')
 
     def fullscreen():
         if renpy.emscripten:

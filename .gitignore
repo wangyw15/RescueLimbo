@@ -420,3 +420,4 @@ __pycache__/
 
 # Custom rules
 .vscode/**
+*.db

@@ -14,12 +14,16 @@ label quiz:
         '嗯~KMeans中的k要定为多少呢~'
         '1':
             $ choice = 1
+            $ set_select('q1_1')
         '2':
             $ choice = 2
+            $ set_select('q1_2')
         '3':
             $ choice = 3
+            $ set_select('q1_3')
         '4':
             $ choice = 4
+            $ set_select('q1_4')
     show iris zorder 0 behind hitomi with dissolve
     if choice == 2:
         hitomi @happy '两种就足够啦！'
@@ -57,9 +61,9 @@ label quiz:
     menu:
         '对于KMeans来说，分成几类是合适的？'
         '2':
-            pass
+            $ set_select('q2_2')
         '3':
-            pass
+            $ set_select('q2_3')
     player '嗯？分成两类或者三类好像都可以？？甚至分两类的轮廓系数更高一点。'
     show wine zorder 0 behind hitomi with dissolve
     hitomi happy '是的，在面对纯数据时，聚类效果的标准其实是不唯一的。'
@@ -79,10 +83,13 @@ label quiz:
         '选择什么算法好呢...'
         'KMeans':
             $ choice = 1
+            $ set_select('q3_1')
         'DBSCAN':
             $ choice = 2
+            $ set_select('q3_2')
         'Agnes':
             $ choice = 3
+            $ set_select('q3_3')
     if choice == 1 or choice == 2:
         show pic bin with dissolve
         hitomi @happy '大家的脸上又可以呈现出笑容了！'
