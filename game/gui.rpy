@@ -23,44 +23,44 @@ init python:
 ## 界面中文本的颜色。
 
 ## 整个界面中使用的强调色，用于标记和突出显示文本。
-define gui.accent_color = u'#0099ff'
+define gui.accent_color = '#99ccff'
 
 ## 当文本按钮既未被选中也未被悬停时使用的颜色。
-define gui.idle_color = u'#aaaaaa'
+define gui.idle_color = '#888888'
 
 ## 小的颜色用于小的文本，需要更亮/更暗才能达到同样的效果。
-define gui.idle_small_color = u'#888888'
+define gui.idle_small_color = '#aaaaaa'
 
 ## 当按钮和滑条被悬停时使用的颜色。
-define gui.hover_color = u'#0099ff'
+define gui.hover_color = '#c1e0ff'
 
 ## 当文本按钮被选中但非焦点时使用的颜色。当一个按钮为当前屏幕或设置选项值时，会
 ## 处于选中状态。
-define gui.selected_color = u'#555555'
+define gui.selected_color = '#ffffff'
 
 ## 当文本按钮无法被选择时使用的颜色。
-define gui.insensitive_color = u'#aaaaaa7f'
+define gui.insensitive_color = '#8888887f'
 
 ## 滑条未填充的部分使用的颜色。这些颜色不直接使用，但在重新生成条形图像文件时使
 ## 用。
-define gui.muted_color = u'#66c1ff'
-define gui.hover_muted_color = u'#99d6ff'
+define gui.muted_color = '#3d5166'
+define gui.hover_muted_color = '#5b7a99'
 
 ## 对话和菜单选择文本使用的颜色。
-define gui.text_color = u'#404040'
-define gui.interface_text_color = u'#404040'
+define gui.text_color = '#ffffff'
+define gui.interface_text_color = '#ffffff'
 
 
 ## 字体和字体大小 #####################################################################
 
 ## 游戏内文本使用的字体。
-define gui.text_font = "SourceHanSansSC-Regular.otf"
+define gui.text_font = "SourceHanSansLite.ttf"
 
 ## 角色名称使用的字体。
-define gui.name_text_font = "SourceHanSansSC-Regular.otf"
+define gui.name_text_font = "SourceHanSansLite.ttf"
 
 ## 游戏外文本使用的字体。
-define gui.interface_text_font = "SourceHanSansSC-Regular.otf"
+define gui.interface_text_font = "SourceHanSansLite.ttf"
 
 ## 普通对话文本的大小。
 define gui.text_size = 33
@@ -196,9 +196,9 @@ define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#cccccc"
+define gui.choice_button_text_idle_color = '#888888'
 define gui.choice_button_text_hover_color = "#ffffff"
-define gui.choice_button_text_insensitive_color = "#444444"
+define gui.choice_button_text_insensitive_color = '#8888887f'
 
 
 ## 存档按钮 ########################################################################

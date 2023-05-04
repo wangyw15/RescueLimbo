@@ -92,7 +92,18 @@ label start:
     hitomi normal '最后是层次聚类Agnes，它的优点很明显：'
     hitomi '前两种算法都需要给出很多参数，但我Agnes啥都不用给，也能聚得很有形状，又可以发现簇之间的层次关系，是很省事的方法。'
     hitomi @shy '不过呢，你省事了，我就苦了，这从头到尾的，得算多少个距离啊，更别提这簇与簇之间的距离，算的我都烧了！'
-    player '{cps=*0.1}嗯...我{/cps}还是想要一些例子，要不你给我几张图，我来看看用三种聚类算法分别聚类以后它们的实际效果？'
-    hitomi angry '好吧，你操作就是了，快点领悟吧！'
+    player '{cps=*0.1}嗯...我{/cps}还是想要一些例子，要不你给我一点数据，我来看看用三种聚类算法分别聚类以后它们的实际效果？'
+    hitomi happy '这么积极啊，很好！那就来试试看吧'
+
+    show overlay dark
+    show text '{color=#FFFFFF}{size=+50}实战{/size}{/color}'
+    window hide
+    with dissolve
+    pause 1.0
+    hide text
+    hide overlay
+    window show
+    with dissolve
+    call quiz
 
     return
