@@ -14,7 +14,7 @@ transform pic_display:
 
 init python:
     def set_select(key: str):
-        api_url = 'http://localhost:5239'
+        api_url = 'https://rescuelimbo.wangyw15.top'
         if renpy.emscripten:
             renpy.emscripten.run_script(f"fetch('{api_url}/rescuelimbo/increase?key={key}')")
         else:

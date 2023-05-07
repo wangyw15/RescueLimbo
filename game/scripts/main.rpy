@@ -112,6 +112,8 @@ label start:
     hitomi happy '不过，对于一个大二学生来说，这些知识足够你消化一阵子了。'
     hitomi '所幸这个世界里的时间比外面流速更慢。以后的知识，就等以后在再来探索吧！'
 
+    $ set_select('complete')
+
     show overlay dark
     show text '{color=#FFFFFF}{size=+50}我的旅程才刚刚开始...{/size}{/color}'
     window hide
